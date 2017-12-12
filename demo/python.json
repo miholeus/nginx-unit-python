@@ -7,9 +7,11 @@
   "applications": {
     "test": {
       "type": "python",
-      "workers": 5,
-      "root": "/apps",
-      "index": "wsgi.py"
+      "workers": 10,
+      "module": "wsgi",
+      "user": "root",
+      "group": "root",
+      "path": "/apps/py"
     }
   }
 }

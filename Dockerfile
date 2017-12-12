@@ -7,4 +7,4 @@ RUN apt-get update; \
     curl http://nginx.org/keys/nginx_signing.key | apt-key add -; \
     apt-get update && apt-get install -y unit python python3
 
-CMD ["unitd", "--no-daemon", "--control", "127.0.0.1:8443"]
+CMD ["unitd", "--no-daemon", "--control", "*:8443"]

@@ -13,9 +13,13 @@ $ docker run -v `pwd`/demo:/apps -p 8300:8300 miholeus/nginx-unit-python
 ```
 
 # Test
+Go to container
 ```
-cd nginx-unit-python
-sudo curl -X PUT -d @./demo/python.json  '127.0.0.1:8443/applications/python_sample'
+docker exec -it <the-container> bash
+```
+Run command
+```
+curl -X PUT -d @/apps/python.json  '127.0.0.1:8443'
 
 ```
 See http:://localhost:8300
