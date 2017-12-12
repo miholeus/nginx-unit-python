@@ -1,0 +1,8 @@
+{
+    "type": "python",
+    "workers": 5,
+    "module": "wsgi",
+    "user": "root",
+    "group": "root",
+    "path": "/apps/flask"
+}
